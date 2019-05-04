@@ -39,7 +39,7 @@
 	{\fontsize{17pt}{1}\selectfont  Môn học}\\[0.3cm]
 	{\fontsize{20pt}{1}\selectfont 	Đồ hoạ và hiện thực ảo}\\[0.9cm]
 	{\fontsize{17pt}{1}\selectfont  Game Design Document}\\[0.5cm]
-	{\fontsize{28pt}{1}\selectfont \textbf{First Person Shooter}}\\[1.3cm]
+	{\fontsize{28pt}{1}\selectfont \textbf{CS Run}}\\[1.3cm]
 \end{center}
 \vspace{0.7cm}
 %\hspace{2.7cm}
@@ -92,20 +92,107 @@
 	
 \chapter*{Project Description}
 	
+\textit{CS Run} là game 3D thể loại bắn súng góc nhìn thứ nhất dành cho người chơi trên máy tính. Game lấy bối cảnh là một khu làng ma quái có những con zombie và quái vật hung hãn tấn công con người, và người chơi sẽ cần vận dụng tất cả khả năng của mình để chiến đấu cho sự sinh tồn và hoàn thành các nhiệm vụ.	
+	
+	
+\chapter*{Game Design Document Version Control}	
+\begin{tabular}{|c|c|c|c|}
+	\hline 
+Version	& Date  & Author & Change Description \\ 
+	\hline 
+	&  &  &  \\ 
+	\hline 
+	&  &  &  \\ 
+	\hline 
+	&  &  &  \\ 
+	\hline 
+	&  &  &  \\ 
+	\hline 
+\end{tabular} 
 	
 \tableofcontents 
 %\listoffigures
 \newpage
 	
+\chapter{Game Overview}
+\section{Game Concept}
+\textit{CS Run} là game 3D bắn súng góc nhìn thứ nhất. Người chơi sẽ nhập vai vào nhân vật bắt đầu vị trí ở trong một căn phòng tối tăm có những con quái vật. Người chơi sẽ phải di chuyển tới các địa điểm khác nhau trong bản đồ, đi tìm và nhặt những trang bị như súng và đạn để tiêu diệt những con quái vật đó. 
+
+
+\section{Genre}
+FPS thuộc thể loại \textit{Action Game}, cụ thể là \textit{Shooter Game} - một thể loại game đang rất phổ biến hiện nay.
+
+
+\section{Target Audience}
+Đối tượng người chơi hướng đến là những người có các đặc điểm sau:
+\begin{itemize}
+	\item nam giới,
+	\item 16 đến 25 tuổi,
+	\item sở hữu máy tính cá nhân,
+	\item yêu thích games,
+	\item thích thể loại hành động và kinh dị,
+	\item không muốn trả phí.
+\end{itemize}
+
+Người chơi game như trên là đối tượng lí tưởng nhắm đến, nhưng game cũng có thể chơi bởi tất cả các đối tượng người dùng khác.
+
+
+\section{Game Flow Summary}
+Từ màn hình chính của game, người chơi có các lựa chọn:
+\begin{itemize}
+	\item Chơi mới
+	\item Chơi tiếp
+	\item Cài đặt
+	\item Điểm cao
+	\item Thoát
+\end{itemize}
+
+
 \chapter{Characters}
+Game có hai loại nhân vật, một là \textit{Player}, là nhân vật người chơi sẽ nhập vai và chơi trong suốt quá trình game diễn ra, và hai là \textit{Monster}. 
+
+\textit{Player} ban đầu sẽ không được trang bị vũ khí, có khả năng di chuyển và nhặt lên súng cũng như đạn, có thể bắn và nạp lại đạn vào súng. Ngoài ra \textit{Player} còn có thể nhảy lên và thực hiện mở cửa. 
+
+\textit{Monster} là zombie và nhện khổng lồ, chúng khác nhau về hình dạng và animation nhưng cùng có các chức năng giống nhau là tấn công công \textit{Player}.
+
 \chapter{Story}
+Tâm và Thư là hai người bạn thân của nhau. Một ngày nọ Tâm mời Thư đến nhà chơi. Khi Thư tới nơi thì trời cũng đã tối. Xung quanh chỉ là một màu đen nhá nhem, thỉnh thoảng lại có những âm thanh rùng mình vang lên rờn rợn. Thư mở cánh cửa nhà bước vào và nhìn thấy có một mẩu giấy, có vẻ như là của Tâm để lại sau khi cậu bị ai đó bắt đi, trên mẩu giấy đó có ghi những việc cần làm đẻ giải cứu được Tâm. Đúng lúc đó những con zombie và những con nhện khổng lồ xuất hiện lao đến. Thư nhặt lên một khẩu súng ở gần đấy bắn về phía bọn quái vật và sau đó anh ta cố gắng hoàn thành tất cả các nhiệm vụ trong mảnh giấy để giải cứu bạn mình.
+
+
 \section{Theme}
+\textit{CS Run} là game hành động và kinh dị. Game đưa người chơi vào trạng thái hồi hộp, sợ hãi trước âm thanh và hình ảnh u ám ma quái và thường xuyên phải đối đầu với những con zombie đang lao đến. Đồng thời game làm cho người chơi cảm giác hưng phấn mỗi khi bắn hạ một con zombie, đặc biệt khiến người chơi bị lôi cuốn khi làm theo và hoàn thành các thử thách nhiệm vụ được đưa ra.
+
+
 \chapter{Story Progression}
+Game bắt đầu với việc \textit{Player} đang đứng trong một căn phòng và \textit{Player} chưa có bất kì trang bị nào. Danh sách các nhiệm vụ đầu tiên được đưa ra cho người chơi, đó cũng là các nhiệm vụ đơn giản nhất mang tính hướng dẫn cho người mới chơi biết cách chơi. Ví dụ như nhiệm vụ nhặt súng, mở cửa, ... \textit{Player} sẽ di chuyển quanh phòng sử dụng các phím di chuyển cơ bản và đi tìm một chiếc hộp có một khẩu súng ở trên, sau đó ấn phím e để trang bị súng. Lúc này \textit{Player} đã có thể sử dụng súng để bắn. \textit{Player} sẽ phải đi tìm tiếp các hộp đạn và nhặt chúng để có thể có thêm đạn cho súng. Các zombie sẽ xuất hiện ở một vài vị trí, zombie nào ở gần \textit{Player} sẽ di chuyển về phía \textit{Player} tấn công. Nếu bị zombie tấn công thì \textit{Player} sẽ bị mất "máu", nếu để mất cạn hết "máu" thì \textit{Player} sẽ thua cuộc. \textit{Player} sẽ phải di chuyển thông minh để né tránh lũ zombie hoặc sử dụng súng để tiêu diệt chúng. Sau khi hoàn thành mỗi nhiệm vụ, sẽ có một dấu tích xanh hiện lên ở bên cạnh tên nhiệm vụ trong danh sách nhiệm vụ để đánh dấu đã hoàn thành, người chơi sẽ lần lượt thực hiện các nhiệm vụ còn lại.
+
 \chapter{Game Play}
 \section{Goals}
+Overall (long term): Hoàn thành tất cả các nhiệm vụ. \\
+Gameplay (short term): Tiêu diệt zombie.
+
 \section{User Skills}
+\begin{itemize}
+	\item Sử dụng được bàn phím và chuột
+	\item Tư duy, phán đoán tốt
+	\item Phản xạ nhanh nhạy
+	\item Ghi nhớ
+	\item Tinh thần vững vàng
+\end{itemize}
+
+
 \section{Game Mechanics}
-\section{Items and powerups}
+
+\section{Items and power-ups}
+Các \textit{items} trong game: 
+\begin{itemize}
+	\item \textit{Súng}: dùng để bắn mục tiêu
+	\item \textit{Đạn}: dùng để nạp lại đạn cho súng khi súng không có đầy băng đạn. Không có đạn thì súng không thể bắn được.
+
+\end{itemize}
+
+Game không có power-up.
+
 \section{Progression and Challenge}
 \section{Losing}
 
