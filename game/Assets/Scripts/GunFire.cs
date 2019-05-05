@@ -5,6 +5,10 @@ using UnityEngine;
 public class GunFire : MonoBehaviour
 {
     public GameObject Flash;
+    void Start()
+    {
+        Flash.SetActive(false);
+    }
     // Update is called once per frame
     void Update()
     {
@@ -14,7 +18,7 @@ public class GunFire : MonoBehaviour
             {
                 AudioSource gunsound = GetComponent<AudioSource>();
                 gunsound.Play();                                // tiếng súng nổ
-                Flash.SetActive(true);
+                
                 StartCoroutine(MuzzleOff());
                 GetComponent<Animation>().Play("GunShot");      // súng giật khi bắn
                 GlobalAmmo.LoadedAmmo -= 1;                     // trừ 1 viên đạn
@@ -24,7 +28,7 @@ public class GunFire : MonoBehaviour
 
     public IEnumerator MuzzleOff()
     {
-
+        Flash.SetActive(true);
         yield return new WaitForSeconds(0.15f);
         Flash.SetActive(false);
     }

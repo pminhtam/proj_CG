@@ -24,6 +24,14 @@ public class GlobalHealth : MonoBehaviour
         HealthDisplay.GetComponent<Text>().text = "Health: " + InternalHealth;
         if(PlayerHealth == 0)           // nếu hết máu sẽ hiện lên game over
         {
+            //Cursor.visible = true;
+            //Screen.lockCursor = true;
+            Cursor.lockState = CursorLockMode.None;
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            PlayerHealth = 10;
+            //Application.LoadLevel(Application.loadedLevel);
+
+
             SceneManager.LoadScene(2);
         }
     }

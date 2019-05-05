@@ -29,6 +29,8 @@ public class HandGunDamage : MonoBehaviour
                 RaycastHit Shot;
                 if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out Shot))
                 {
+                    DamageAmount = 5;
+
                     //print("Found an object - distance: " + Shot.distance);
                     //Debug.Log(Shot);
                     TargetDistance = Shot.distance;
@@ -53,6 +55,7 @@ public class HandGunDamage : MonoBehaviour
                             }
                         }
 
+                        // truyền đến hàm DeductPoints ở EnemyScript
                         Shot.transform.SendMessage("DeductPoints", DamageAmount, SendMessageOptions.DontRequireReceiver);
 
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.SceneManagement;
 
 public class PauseGame : MonoBehaviour
 {
@@ -42,5 +43,15 @@ public class PauseGame : MonoBehaviour
         ThePlayer.GetComponent<FirstPersonController>().enabled = true;
         Cursor.visible = false;
         PauseMenu.SetActive(false);
+    }
+
+    public void RestartGame()
+    {
+        Time.timeScale = 1;
+        Paused = false;
+        ThePlayer.GetComponent<FirstPersonController>().enabled = true;
+        Cursor.visible = false;
+        PauseMenu.SetActive(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

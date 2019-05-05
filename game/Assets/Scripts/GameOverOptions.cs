@@ -3,18 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenuOptions : MonoBehaviour
+public class GameOverOptions : MonoBehaviour
 {
 
-    public void PlayGame()
+    public void MainMenu()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(4);
 
     }
-    public void CreditScene()
-    {
-        SceneManager.LoadScene(3);
-    }
+
 
     public void Quit()
     {
@@ -23,12 +20,15 @@ public class MainMenuOptions : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //Cursor.visible = true;
+
     }
 }

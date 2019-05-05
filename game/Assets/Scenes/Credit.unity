@@ -634,8 +634,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "M\xE0n h\xECnh gioi thieu\nNhom 123\nGame ban sung\nPham Minh Tam\nLam
-    Xuan Thu"
+  m_Text: "Introduce\nNhom \nGame ban sung\nPham Minh Tam\nLam Xuan Thu"
 --- !u!222 &1654479346
 CanvasRenderer:
   m_ObjectHideFlags: 0

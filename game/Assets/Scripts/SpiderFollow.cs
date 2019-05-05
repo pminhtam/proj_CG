@@ -7,9 +7,9 @@ public class SpiderFollow : MonoBehaviour
 
     public GameObject ThePlayer;
     public float TargetDistance;
-    public float AllowedRange = 10; // cách 10 thì đuổi
+    public float AllowedRange = 30; // cách 10 thì đuổi
     public GameObject TheEnemy;
-    public float EnemySpeed;        // tốc độ di chuyển of zombie
+    public float EnemySpeed = 0.01f;        // tốc độ di chuyển of zombie
     public int AttackTrigger;       // trạng thái của zombie có tấn công không
     public RaycastHit Shot;
 
