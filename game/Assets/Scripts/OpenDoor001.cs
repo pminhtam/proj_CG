@@ -9,7 +9,6 @@ public class OpenDoor001 : MonoBehaviour
     public float TheDistance = PlayerCasting.DistanceFromTarget;
     public GameObject TheDoor;
 
-   public GameObject ObjectiveComplete;
 
     // Update is called once per frame
     void Update()
@@ -28,7 +27,6 @@ public class OpenDoor001 : MonoBehaviour
             if (TheDistance <= 2)
             {
                 StartCoroutine(OpenTheDoor());
-                ObjectiveComplete.SetActive(true);
 
             }
         }
