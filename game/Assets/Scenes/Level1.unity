@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.137
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.32565156, g: 0.29160392, b: 0.24012136, a: 0.137}
+  m_IndirectSpecularColor: {r: 0.33523577, g: 0.30033374, b: 0.24761829, a: 0.137}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -638,8 +638,8 @@ Animation:
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: a61cc25ca908b4f4486f041515af69b5, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: a61cc25ca908b4f4486f041515af69b5, type: 2}
   - {fileID: 7400000, guid: 35910fd9c21a0c4468312e0ac623a55f, type: 2}
+  - {fileID: 7400000, guid: 25076043157543a4994a0f3c8e65f448, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -10504,7 +10504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 6f8ee9e57f0ae87429c40e77c8b75822, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 6f8ee9e57f0ae87429c40e77c8b75822, type: 3}
       propertyPath: m_Layer
@@ -10576,7 +10576,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 6f8ee9e57f0ae87429c40e77c8b75822, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.040000007
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 6f8ee9e57f0ae87429c40e77c8b75822, type: 3}
       propertyPath: m_LocalScale.z
