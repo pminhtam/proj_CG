@@ -18,10 +18,11 @@ public class GameOverOptions : MonoBehaviour
         Application.Quit();
     }
     // Start is called before the first frame update
-    void Start()
+    IEnumerator Start()
     {
         Cursor.lockState = CursorLockMode.None;
-
+        yield return new WaitForSeconds(5.0f);
+        SceneManager.LoadScene(4);
 
     }
 
