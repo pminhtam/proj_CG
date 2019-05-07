@@ -26,7 +26,7 @@ public class MakeSpider : MonoBehaviour
     {
         //yield return new WaitForSeconds(10f);
 
-        Vector3 myVector = new Vector3(transform.position.x+ Random.Range(-100.0f, 100.0f), transform.position.y, transform.position.z+ Random.Range(-100.0f, 100.0f));
+        Vector3 myVector = new Vector3(transform.position.x+ Random.Range(-50.0f, 50.0f), transform.position.y, transform.position.z+ Random.Range(-50.0f, 50.0f));
         //TheZombie.SetActive(true);
         Instantiate(TheSpider, myVector, Quaternion.identity);
         //TheZombie.SetActive(true);
