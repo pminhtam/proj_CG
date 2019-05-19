@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class PickUpBook1 : MonoBehaviour
+public class PickUpBook2_2 : MonoBehaviour
 {
 
     public float TheDistance = PlayerCasting.DistanceFromTarget;
@@ -35,7 +35,6 @@ public class PickUpBook1 : MonoBehaviour
                 StartCoroutine(TakeNineMil());
                 ObjectiveComplete.SetActive(true);
                 TextDisplay.GetComponent<Text>().text = "";
-                Cursor.lockState = CursorLockMode.None;
                 SceneManager.LoadScene(5);
 
             }
